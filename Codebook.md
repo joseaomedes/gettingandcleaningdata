@@ -39,7 +39,7 @@ The script performs the following transformations:
 5. Add a new column to the unified dataset containing the text description of the activities by performing a join between the unified dataset and the information contained within the 'activity_types' file
 6. Add a new column to the unified dataset containing the subject ids as per the information present in the 'subject_test.txt' and 'subject_train.txt' files.
 7. Group unified dataset by subject and activity_description
-8. Calcultate group average for all the variables within the unified dataset
+8. Calculate group average for all the variables within the unified dataset
 
 The resulting dataset contains the average of all the variables taken from the original dataset (those having 'mean' or 'std' in their titles) accross the different groups of subjects and activity types.
 
