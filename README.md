@@ -1,4 +1,4 @@
-# Coursera 'Getting and Cleaning Data' Project Assignment
+#Coursera 'Getting and Cleaning Data' Project Assignment
 
 This repository contains the R script called 'run_analysis.R' used to process data as described in the codebook.
 
