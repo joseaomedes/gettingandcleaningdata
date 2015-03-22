@@ -48,7 +48,7 @@ The resulting dataset is stored in a text file called 'analysistidy.txt'
 ## Variable descriptions:
 
 * subjects: IDs of the subject producing the measurements
-* activity_Description: Text description of the activities type included in the meassurement
+* activity_Description: Text description of the activity type included in the meassurement
 
 #### Remaining columns: 
 
