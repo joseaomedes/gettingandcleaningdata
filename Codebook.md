@@ -24,37 +24,37 @@ The initial dataset is a zip file containing the following relevant files:
 #### Train Directory:
 
 * X_train.txt        : Variable measurements for train dataset
-* y_train.txt        : Activity numbers for each of the rows in the test dataset
-* subject_train.txt  : Subject ID for each of the rows in the test dataset
+* y_train.txt        : Activity numbers for each of the rows in the train dataset
+* subject_train.txt  : Subject ID for each of the rows in the train dataset
 
 
-## Transformations by the run_analysis.R Script
+## Transformations performed by 'run_analysis.R' Script
 
 The script performs the following transformations:
 
-1. Merge test and train dataset in a single dataset containing all the original meassurements
-2. Add the column names to the unified dataset by readign them from 'features.txt'
-3. Obtain a new dataset by filtering out all the columns not containing the words 'mean' or 'std'
-4. Add a new column to the unified dataset containing the activity_id for each of the rows contained within the 'y_test.txt' and 'y_train.txt' files
-5. Add a new column to the unified dataset containing the text description of the activities by performing a join between the dataset and the information contained within the 'activity_types' file
+1. Merge test and train datasets in a single unified dataset containing all the original meassurements
+2. Add the column names to the unified dataset by reading them from 'features.txt' file
+3. Obtain a new dataset by filtering out all the columns not containing the words 'mean' or 'std' in their names
+4. Add a new column to the unified dataset containing the activity_id for each of the rows. Information taken from 'y_test.txt' and 'y_train.txt' files
+5. Add a new column to the unified dataset containing the text description of the activities by performing a join between the unified dataset and the information contained within the 'activity_types' file
 6. Add a new column to the unified dataset containing the subject ids as per the information present in the 'subject_test.txt' and 'subject_train.txt' files.
 7. Group unified dataset by subject and activity_description
-8. Perform an average by groups of all the variables within the unified dataset
+8. Calcultate group average for all the variables within the unified dataset
 
-The resulting dataset contains the average of all the variables taken from the original dataset (those having 'mean' or 'std' in their titles) perform by groups of subjects and actitivity types.
+The resulting dataset contains the average of all the variables taken from the original dataset (those having 'mean' or 'std' in their titles) accross the different groups of subjects and activity types.
 
 The resulting dataset is stored in a text file called 'analysistidy.txt'
  
 ## Variable descriptions:
 
-* subjects: ID of the subject producing the measurements
-* activity_Description: Text description of the activities being studied
+* subjects: IDs of the subject producing the measurements
+* activity_Description: Text description of the activities type included in the meassurement
 
 #### Remaining columns: 
 
-Average across each group of subjects and activity types of the original variables taken from the initial dataset. We reproduce below the description of those variables as per the description included in the original datataset
+Average across each group of subjects and activity types of the original variables taken from the initial dataset. We reproduce below the description of those variables as per the description within the original datataset
 
-#### Original variables description (taken from original dataset codebook)
+#### Original variables description
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
