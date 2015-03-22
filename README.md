@@ -10,11 +10,11 @@ In order to run the script:
 
 The script output is a file called 'activitytidy.txt' containing the summary file as described in the codebook
 
-This script expects the data to be analyed to be already downloaded and unzipped.
+This script expects the initial data to be already downloaded and unzipped.
 
 ### Dependencies:
 
-This script uses 'dplyer' package
+This script uses *'dplyer'* package
 
 
 
