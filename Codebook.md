@@ -41,16 +41,18 @@ The script performs the following transformations:
 7. Group unified dataset by subject and activity_description
 8. Perform an average by groups of all the variables within the unified dataset
 
-* The resulting dataset contains the average of all the variables taken from the original dataset (those having 'mean' or 'std' in their titles) perform by groups of subjects and actitivity types.
+The resulting dataset contains the average of all the variables taken from the original dataset (those having 'mean' or 'std' in their titles) perform by groups of subjects and actitivity types.
 
-* The resulting dataset is stored in a text file called 'analysistyde.txt'
+The resulting dataset is stored in a text file called 'analysistidy.txt'
  
 ## Variable descriptions:
 
 * subjects: ID of the subject producing the measurements
 * activity_Description: Text description of the activities being studied
 
-#### Remaining columns: Average across each group of subjects and activity files of the orininal variables taken from the intial dataset. We reproduce below the description of those variables as per the description included in the original datataset
+#### Remaining columns: 
+
+Average across each group of subjects and activity types of the original variables taken from the initial dataset. We reproduce below the description of those variables as per the description included in the original datataset
 
 #### Original variables description (taken from original dataset codebook)
 
