@@ -8,24 +8,24 @@ This document describes the variables contained in the resulting dataset obtaine
 
 The initial dataset is a zip file containing the following relevant files:
 
-### Root directory:
+#### Root directory:
 
-features_info.txt : Description of the 561 variables contained in the dataset
-features.txt      : Names of the variables (list of 561 names) Ex: tBodyAcc-XYZ-mean()-X
-activity_types.txt: Names of the activity types beeing tracked (list of 6 activities) Exs: WALKING, SITTING, etc.
+*features_info.txt : Description of the 561 variables contained in the dataset
+*features.txt      : Names of the variables (list of 561 names) Ex: tBodyAcc-XYZ-mean()-X
+*activity_types.txt: Names of the activity types beeing tracked (list of 6 activities) Exs: WALKING, SITTING, etc.
 
-### Test Directory:
+#### Test Directory:
 
-X_test.txt        : Variable measurements for test dataset
-y_test.txt	  : Activity numbers for each of the rows in the test dataset
-subject_test.txt  : Subject ID for each of the rows in the test dataset
+*X_test.txt        : Variable measurements for test dataset
+*y_test.txt	  : Activity numbers for each of the rows in the test dataset
+*subject_test.txt  : Subject ID for each of the rows in the test dataset
 
 
-### Train Directory:
+#### Train Directory:
 
-X_train.txt        : Variable measurements for train dataset
-y_train.txt        : Activity numbers for each of the rows in the test dataset
-subject_train.txt  : Subject ID for each of the rows in the test dataset
+*X_train.txt        : Variable measurements for train dataset
+*y_train.txt        : Activity numbers for each of the rows in the test dataset
+*subject_train.txt  : Subject ID for each of the rows in the test dataset
 
 
 ## Transformations by the run_analysis.R Script
@@ -41,18 +41,18 @@ The script performs the following transformations:
 7. Group unified dataset by subject and activity_description
 8. Perform an average by groups of all the variables within the unified dataset
 
-The resulting dataset contains the average of all the variables taken from the original dataset (those having 'mean' or 'std' in their titles) perform by groups of subjects and actitivity types.
+*The resulting dataset contains the average of all the variables taken from the original dataset (those having 'mean' or 'std' in their titles) perform by groups of subjects and actitivity types.
 
-9. The resulting dataset is stored in a text file called 'analysistyde.txt'
+*The resulting dataset is stored in a text file called 'analysistyde.txt'
  
 ## Variable descriptions:
 
-subjects: ID of the subject producing the measurements
-activity_Description: Text description of the activities being studied
+*subjects: ID of the subject producing the measurements
+*activity_Description: Text description of the activities being studied
 
-Remaining columns: Average across each group of subjects and activity files of the orininal variables taken from the intial dataset. We reproduce below the description of those variables as per the description included in the original datataset
+#### Remaining columns: Average across each group of subjects and activity files of the orininal variables taken from the intial dataset. We reproduce below the description of those variables as per the description included in the original datataset
 
-### Original variables description (taken from original dataset codebook)
+#### Original variables description (taken from original dataset codebook)
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -63,28 +63,28 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+*tBodyAcc-XYZ
+*tGravityAcc-XYZ
+*tBodyAccJerk-XYZ
+*tBodyGyro-XYZ
+*tBodyGyroJerk-XYZ
+*tBodyAccMag
+*tGravityAccMag
+*tBodyAccJerkMag
+*tBodyGyroMag
+*tBodyGyroJerkMag
+*fBodyAcc-XYZ
+*fBodyAccJerk-XYZ
+*fBodyGyro-XYZ
+*fBodyAccMag
+*fBodyAccJerkMag
+*fBodyGyroMag
+*fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
 
-mean(): Mean value
-std(): Standard deviation
+*mean(): Mean value
+*std(): Standard deviation
 
 
  
