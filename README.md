@@ -8,7 +8,7 @@ In order to run the script:
 2. Modify the first section of the script in order to configure the location of the data files within your working directory.
 3. Run the script.
 
-The script output is a file called 'analysistidy.txt' containing the summary file as described in the codebook
+The script output is a file called 'activitytidy.txt' containing the summary file as described in the codebook
 
 This script expects the data to be analyed to be already downloaded and unzipped.
 
